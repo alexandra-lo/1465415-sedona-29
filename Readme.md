@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sasha Lomakina](https://up.htmlacademy.ru/htmlcss/29/user/1465415).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Удовенко](https://htmlacademy.ru/profile/id7570).
 
 ---
 
