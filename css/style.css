@@ -121,6 +121,7 @@ img {
 .advantages-item h3 {
     font-size: 21px;
     line-height: 21px;
+    color: var(--basic-extra-dark);
 }
 
 .features-others {
@@ -139,6 +140,7 @@ img {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
+    color: var(--basic-extra-dark);
 }
 
 .hotel-search {
@@ -148,6 +150,7 @@ img {
 .hotel-search h2 {
     font-size: 30px;
     line-height: 24px;
+    color: var(--basic-extra-dark);
 }
 
 .hotel-search-btn {
@@ -186,6 +189,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+    color: var(--basic-extra-dark);
 }
 
 .footer-contacts a {
@@ -200,4 +204,5 @@ img {
     font-size: 14px;
     line-height: 26px;
     text-align: center ;
+    color: var(--basic-extra-dark);
 }
