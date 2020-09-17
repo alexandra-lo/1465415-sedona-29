@@ -15,7 +15,8 @@
     --special-blue-active: #5496BD;
     --special-brown: #766357;
     --special-brown-hover: #604E43;
-    --special-brown-active: #503E33; 
+    --special-brown-active: #503E33;
+    --special-dark: #666666; 
 }
 
 body {
@@ -76,7 +77,7 @@ img {
 }
 
 .menu-item a:not([href]) {
-    color: var(--special-brown)
+    color: var(--special-brown);
 }
 
 .welcome-img {
@@ -90,7 +91,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    color: var(--basic-extra-dark)
+    color: var(--basic-extra-dark);
 }
 
 .features-desc {
@@ -205,4 +206,112 @@ img {
     line-height: 26px;
     text-align: center ;
     color: var(--basic-extra-dark);
+}
+
+.filter-search {
+    background-color: var(--special-blue);
+    width: 1200px;
+    height: 217px;
+}
+
+.filter-results {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-extra-dark);
+}
+
+.filter-results h3 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.criterion-list {
+    list-style: none;
+}
+
+.criterion-item a {
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.criterion-item a:hover,
+.criterion-item a:focus {
+    color: var(--special-blue);
+    opacity: 1;
+}
+
+.criterion-item a:active {
+    color: var(--basic-extra-dark);
+    opacity: 1;
+}
+
+.criterion-item a:not([href]) {
+    color: var(--special-blue);
+    opacity: 1;
+}
+
+.sort-list {
+    list-style: none;
+}
+
+.hotels-list {
+    list-style: none;
+}
+
+.hotel-title {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.hotel-title a {
+    color: var(--basic-extra-dark)
+}
+
+.hotel-title a:hover,
+.hotel-title a:focus {
+    color: var(--special-blue);
+}
+
+.hotel-title a:active {
+    color: var(--basic-extra-dark);
+    opacity: 0.3;
+}
+
+.btn {
+    font-weight: bold;
+    color: var(--basic-light);
+}
+
+.info-btn {
+    background-color: var(--special-blue);
+}
+
+.info-btn:hover,
+.info-btn:focus {
+    background-color: var(--special-blue-hover);
+}
+
+.info-btn:active {
+    color: var(--basic-for-btn);
+    background-color: var(--special-blue-active);
+}
+
+.booking-btn {
+    background-color: var(--special-brown);
+}
+
+.booking-btn:hover,
+.booking-btn:focus {
+    background-color: var(--special-brown-hover);
+}
+
+.booking-btn:active {
+    color: var(--basic-for-btn);
+    background-color: var(--special-brown-active);
+}
+
+.hotel-rating {
+    color: var(--special-dark);
+    background-color: var(--special-neutral);
 }
