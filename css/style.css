@@ -1,6 +1,4 @@
 :root {
-    --basic-background: #888888;
-
     --basic-light: #FFFFFF;
     --basic-for-btn: rgba(255, 255, 255, 0.3);
     --basic-light-transparent: rgba(255, 255, 255, 0.9);
@@ -30,7 +28,7 @@ body {
     line-height: 21px;
     color: var(--basic-dark);
     text-transform: uppercase;
-    background-color: var(--basic-background);    
+    background-color: var(--special-neutral);    
 }
 
 a {
@@ -46,10 +44,6 @@ img {
     margin-left: 40px;
     margin-right: 40px;
     background-color: var(--basic-light);
-}
-
-.main-logo {
-    background-color: var(--special-blue);
 }
 
 .main-menu {
