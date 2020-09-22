@@ -175,17 +175,13 @@ img {
     grid-row: 1 / 2;
 }
 
-
-.features-others {
-    background-color: var(--basic-neutral);
-}
-
 .features-others-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0;
     padding: 0;
     list-style: none;
+    background-color: var(--basic-neutral);
 }
 
 .features-others-item {
