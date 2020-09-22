@@ -133,12 +133,12 @@ img {
 
 .features-main-first .features-wrapper {
     grid-column: 1 / 2;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
 }
 
 .features-main-first .features-img-wrapper {
     grid-column: 2 / 4;
-    grid-row: 1 / 1;
+    grid-row: 1 /2;
 }
 
 .advantages-list {
@@ -167,12 +167,12 @@ img {
 
 .features-main-second .features-wrapper {
     grid-column: -1 /-2;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
 }
 
 .features-main-second .features-img-wrapper {
     grid-column: -2 / -4;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
 }
 
 
