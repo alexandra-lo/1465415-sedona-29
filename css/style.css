@@ -17,8 +17,11 @@
     --special-dark: #666666; 
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    min-width: 1280px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -41,12 +44,19 @@ img {
 }
 
 .container {
-    margin-left: 40px;
-    margin-right: 40px;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    margin: 0 auto;
     background-color: var(--basic-light);
 }
 
 .main-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 15px 72px;
     list-style: none;
 }
 
@@ -54,6 +64,16 @@ img {
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
+}
+
+.menu-item:first-child,
+.menu-item:nth-child(2) {
+    text-align: left;
+}
+
+.menu-item:nth-child(3),
+.menu-item:last-child {
+    text-align: right;
 }
 
 .menu-item a {
@@ -105,7 +125,27 @@ img {
     font-size: 21px;
 }
 
+.features-main-first {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 256px;
+}
+
+.features-main-first .features-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+}
+
+.features-main-first .features-img-wrapper {
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+}
+
 .advantages-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -119,11 +159,32 @@ img {
     color: var(--basic-extra-dark);
 }
 
+.features-main-second {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 256px;
+}
+
+.features-main-second .features-wrapper {
+    grid-column: -1 /-2;
+    grid-row: 1 / 1;
+}
+
+.features-main-second .features-img-wrapper {
+    grid-column: -2 / -4;
+    grid-row: 1 / 1;
+}
+
+
 .features-others {
     background-color: var(--basic-neutral);
 }
 
 .features-others-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -170,15 +231,18 @@ img {
     border: none;
 }
 
-.main-footer {
-    background-color: var(--basic-light-transparent);
-}
-
 .map {
     width: 1199px;
     height: 594px;
     background-color: var(--basic-neutral);
 }
+
+.main-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--basic-light-transparent);
+}
+
 .footer-contacts {
     font-weight: bold;
     font-size: 21px;
@@ -192,7 +256,10 @@ img {
 }
 
 .social-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 .footer-copyright {
