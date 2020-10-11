@@ -651,6 +651,7 @@ img {
 }
 
 .criterion-item a {
+    color: var(--basic-extra-dark);
     opacity: 0.3;
     text-decoration: none;
     border-bottom: 1px dashed #81B3D2;
