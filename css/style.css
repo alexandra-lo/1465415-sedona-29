@@ -17,7 +17,7 @@
     --special-brown: #766357;
     --special-brown-hover: #604E43;
     --special-brown-active: #503E33;
-    --special-dark: #666666; 
+    --special-dark: #666666;
 }
 
 html {
@@ -34,7 +34,7 @@ body {
     line-height: 21px;
     color: var(--basic-dark);
     text-transform: uppercase;
-    background-color: var(--special-neutral);    
+    background-color: var(--special-neutral);
 }
 
 a {
@@ -96,12 +96,12 @@ img {
 }
 
 .menu-item:first-child {
-    padding-left: 72px;   
+    padding-left: 72px;
 }
 
 .menu-item:last-child {
-    padding-right: 72px;   
-} 
+    padding-right: 72px;
+}
 
 .menu-item:first-child,
 .menu-item:nth-child(2) {
@@ -111,7 +111,7 @@ img {
 .menu-item:nth-child(3),
 .menu-item:last-child {
     text-align: right;
-} 
+}
 
 .menu-item a {
     color: var(--basic-extra-dark);
@@ -120,6 +120,7 @@ img {
 .menu-item a:hover,
 .menu-item a:focus {
     color: var(--special-blue);
+    outline: none;
 }
 
 .menu-item a:active {
@@ -133,7 +134,7 @@ img {
 
 .welcome {
     position: relative;
-    background-image: 
+    background-image:
     url('../img/shape.png'),
     url('../img/background-photo.jpg');
     background-repeat: no-repeat, no-repeat;
@@ -180,7 +181,7 @@ img {
     font-weight: bold;
     font-size: 21px;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .features-number {
@@ -291,7 +292,7 @@ img {
 }
 
 .features-others-item {
-    text-align: center;    
+    text-align: center;
     padding-top: 46px;
 }
 
@@ -334,14 +335,16 @@ img {
     text-transform: uppercase;
     color: var(--basic-light);
     background-color: var(--special-brown);
-    border: none; 
-    padding: 30px 140px;  
+    border: none;
+    padding: 30px 140px;
+    cursor: pointer;
 }
 
 .hotel-search-btn:hover,
 .hotel-search-btn:focus {
     background-color: var(--special-brown-hover);
     border: none;
+    outline: none;
 }
 
 .hotel-search-btn:active {
@@ -393,6 +396,7 @@ img {
 .modal label {
     display: block;
     min-width: 92px;
+    box-sizing: border-box;
     margin-right: 20px;
     text-align: left;
 }
@@ -409,6 +413,13 @@ img {
     top: 0;
     right: 0;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.calendar:focus,
+.minus-btn:focus,
+.plus-btn:focus {
+    outline: none;
 }
 
 .calendar:hover path,
@@ -442,11 +453,12 @@ img {
 }
 
 .guests-left-column {
-    margin-right: 10;
+    margin-right: 5px;
 }
 
 .guests-right-column label {
     text-align: right;
+    padding-right: 10px;
 }
 
 .guests-count {
@@ -465,6 +477,7 @@ img {
     height: 38px;
     text-align: center;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .minus-btn {
@@ -499,11 +512,13 @@ img {
     padding: 16px 180px;
     background-color: var(--special-blue);
     border: none;
+    cursor: pointer;
 }
 
 .modal button[type="submit"]:hover,
 .modal button[type="submit"]:focus {
     background-color: var(--special-blue-hover);
+    outline: none;
 }
 
 .modal button[type="submit"]:active {
@@ -511,11 +526,11 @@ img {
     background-color: var(--special-blue-active);
 }
 
- .main-footer {  
+ .main-footer {
     position: absolute;
     bottom: 0;
     width: 1200px;
-    min-height: 120px;   
+    min-height: 120px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--basic-light-transparent);
@@ -559,16 +574,17 @@ img {
 }
 
 .social-item a {
-    display: block; 
+    display: block;
     position: relative;
     width: 46px;
-    height: 48px;
+    height: 47px;
     background-color: var(--special-blue);
 }
 
 .social-item a:hover,
 .social-item a:focus {
     background-color: var(--special-blue-hover);
+    outline: none;
 }
 
 .social-item a:active {
@@ -611,21 +627,25 @@ img {
     align-items: center;
 }
 
-.footer-copyright a {
+.copyright-link {
     padding-left: 8px;
 }
 
-.footer-copyright svg {
+.copyright-link:focus {
+    outline: none;
+}
+
+.copyright-link svg {
     vertical-align: middle;
 }
 
-.footer-copyright:hover path,
-.footer-copyright:focus path {
+.copyright-link:hover path,
+.copyright-link:focus path {
     fill: var(--special-blue);
 }
 
-.footer-copyright:active path {
-    fill: var(--special-for-copyright); 
+.copyright-link:active path {
+    fill: var(--special-for-copyright);
 }
 
 .filter-search {
@@ -642,7 +662,7 @@ img {
 
 .filter-search form {
     display: grid;
-    grid-template-columns: max-content 1fr 317px;   
+    grid-template-columns: max-content 1fr 317px;
 }
 
 .filter-fieldset {
@@ -668,8 +688,38 @@ img {
     list-style: none;
 }
 
+.filter-checkbox {
+    position: relative;
+}
+
 .filter-checkbox:not(:last-child) {
     margin-bottom: 25px;
+}
+
+.filter-checkbox label {
+    padding-left: 40px;
+    position: relative;
+}
+
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url('../img/checkbox-off.svg');
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-image: url('../img/checkbox-on.svg');
+}
+
+input[type="checkbox"]:disabled + .custom-checkbox {
+    background-image: url('../img/checkbox-off-disabled.svg');
+}
+
+input[type="checkbox"]:checked:disabled + .custom-checkbox {
+    background-image: url('../img/checkbox-on-disabled.svg');
 }
 
 .range-filter p {
@@ -740,6 +790,7 @@ img {
 .toggle:hover,
 .toggle:focus {
     transform: scale(1.2);
+    outline: none;
 }
 
 .toggle-min {
@@ -754,19 +805,21 @@ img {
 
 .range-filter button {
     margin-left: 85px;
-    padding: 6px 37px;
+    padding: 7px 35px 8px;
     font-size: inherit;
     text-transform: uppercase;
     color: inherit;
     background-color: transparent;
     border: 2px solid #FFFFFF;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .range-filter button:hover,
 .range-filter button:focus {
     color: var(--basic-extra-dark);
     background-color: var(--basic-light);
+    outline: none;
 }
 
 .filter-results {
@@ -824,6 +877,7 @@ img {
 .criterion-item a:focus {
     color: var(--special-blue);
     opacity: 1;
+    outline: none;
 }
 
 .criterion-item a:active {
@@ -847,6 +901,10 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.sort-link:focus {
+    outline: none;
 }
 
 .sort-link path {
@@ -892,7 +950,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, min-content);
-    width: min-content; 
+    width: min-content;
     min-height: 90px;
     padding-top: 23px;
     padding-bottom: 30px;
@@ -923,6 +981,7 @@ img {
 .hotel-title a:hover,
 .hotel-title a:focus {
     color: var(--special-blue);
+    outline: none;
 }
 
 .hotel-title a:active {
@@ -953,6 +1012,7 @@ img {
 .info-btn:hover,
 .info-btn:focus {
     background-color: var(--special-blue-hover);
+    outline: none;
 }
 
 .info-btn:active {
@@ -967,6 +1027,7 @@ img {
 .booking-btn:hover,
 .booking-btn:focus {
     background-color: var(--special-brown-hover);
+    outline: none;
 }
 
 .booking-btn:active {
