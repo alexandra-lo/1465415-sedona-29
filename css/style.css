@@ -605,7 +605,9 @@ img {
 
 .social-item a {
     display: block;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 46px;
     height: 47px;
     background-color: var(--special-blue);
@@ -622,25 +624,6 @@ img {
 
 .social-item a:active svg {
     opacity: 0.3;
-}
-
-.social-item svg {
-    position: absolute;
-}
-
-.item-twitter svg {
-    top: 15px;
-    left: 15px;
-}
-
-.item-facebook svg {
-    top: 13px;
-    left: 16px;
-}
-
-.item-youtube svg  {
-    top: 16px;
-    left: 14px;
 }
 
 .footer-copyright {
