@@ -143,9 +143,9 @@ img {
 }
 
 .welcome img {
-  width: 457px;
-  height: 351px;
-  padding-left: 371px;
+    width: 457px;
+    height: 351px;
+    padding-left: 371px;
 }
 
 .welcome-desc {
@@ -177,9 +177,9 @@ img {
 }
 
 .features-wrapper {
-  background-color: var(--special-blue);
-  padding-left: 40px;
-  padding-right: 40px;
+    background-color: var(--special-blue);
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .features-main h3 {
@@ -331,8 +331,8 @@ img {
 }
 
 .hotel-search p {
-  line-height: 24px;
-  margin-bottom: 45px;
+    line-height: 24px;
+    margin-bottom: 45px;
 }
 
 .hotel-search-btn {
@@ -364,14 +364,14 @@ img {
 }
 
 .hotel-search img {
-  width: 1200px;
-  height: 582px;
+    width: 1200px;
+    height: 582px;
 }
 
 .hotel-search iframe {
-  position: absolute;
-  top: 237px;
-  left: 0;
+    position: absolute;
+    top: 237px;
+    left: 0;
 }
 
 .modal {
@@ -393,11 +393,11 @@ img {
 }
 
 .modal-close {
-  opacity: 0;
-  bottom: 675px;
-  transition:
-  opacity 0.4s ease,
-  bottom 1s ease;
+    opacity: 0;
+    bottom: 675px;
+    transition:
+    opacity 0.4s ease,
+    bottom 1s ease;
 }
 
 .modal-wrapper {
@@ -419,7 +419,7 @@ img {
 }
 
 .modal input::placeholder {
-  color: var(--basic-extra-dark);
+    color: var(--basic-extra-dark);
 }
 
 .modal input:hover {
@@ -556,7 +556,7 @@ img {
     background-color: var(--special-blue-active);
 }
 
- .main-footer {
+.main-footer {
     position: absolute;
     bottom: 0;
     width: 1200px;
@@ -709,13 +709,13 @@ img {
 }
 
 .filter-checkbox label::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 23px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -731,7 +731,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 input[type="checkbox"]:focus-visible + .filter-checkbox::before {
-  outline: 2px solid black;
+    outline: 2px solid black;
 }
 
 .range-filter p {
@@ -778,7 +778,7 @@ input[type="checkbox"]:focus-visible + .filter-checkbox::before {
 }
 
 .price-controls input::placeholder {
-  color: var(--basic-light);
+    color: var(--basic-light);
 }
 
 .range-controls {
@@ -954,10 +954,10 @@ input[type="checkbox"]:focus-visible + .filter-checkbox::before {
 }
 
 .hotels-photo {
-  width: 135px;
-  height: 90px;
-  padding-top: 30px;
-  margin-right: 29px;
+    width: 135px;
+    height: 90px;
+    padding-top: 30px;
+    margin-right: 29px;
 }
 
 .major-info {
@@ -1050,8 +1050,8 @@ input[type="checkbox"]:focus-visible + .filter-checkbox::before {
 }
 
 .minor-info img {
-  width: 18px;
-  height: 17px;
+    width: 18px;
+    height: 17px;
 }
 
 .hotel-rating {
